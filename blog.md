@@ -57,7 +57,7 @@ To get familiar with it check out the following links:
 
 ### Configure Visual Studio Code
 
-Maybe you are working behind a corporate proxy in this case you have to set the proxy settings in Visual Studio Code.
+Maybe you are working behind a corporate proxy. In this case you have to set the proxy settings in Visual Studio Code.
 You can do that by modifying the settings.json file under the menu item `File/Preferences/User Settings`:
 
 ```json
@@ -78,7 +78,7 @@ Choose your prefered Cloud Foundry provider and sign up for an account.
 You can find a list of certified Cloud Foundry Providers on <https://www.cloudfoundry.org/use/cloud-foundry-certified>. 
 If you choose one of these providers you are certain that your app will run as expected and you could also switch the provider later and your app will still work.
 
-For example, you can sign up for the [Swisscom Application Cloud](https://developer.swisscom.com/)). 
+For example, you can sign up for the [Swisscom Application Cloud](https://developer.swisscom.com/). 
 To start using it, here's the link to the [documentation](https://docs.developer.swisscom.com/). 
 
 <br>
