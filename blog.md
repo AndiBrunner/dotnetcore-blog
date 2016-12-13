@@ -1,4 +1,4 @@
-# First steps with .NET Core in a Cloud Foundry platform
+# First steps with .NET Core on a Cloud Foundry platform
 
 <br>
 <br>
@@ -27,7 +27,7 @@ To get started, you have to:
 
 <br>
 
-## Install the .Net Core SDK
+## 1. Install the .Net Core SDK
 
 
 An installation guide can be found here: <https://www.microsoft.com/net/core>
@@ -37,7 +37,7 @@ The SDK can be found on <https://www.microsoft.com/net/download/core#/current>. 
 
 <br>
 
-## Install Visual Studio Code
+## 2. Install Visual Studio Code
 
 Visual Studio Code is a cross-platform source code editor. You can use it on Windows, Linux and OS X. It supports debugging, git control, syntax highlithing,  intelligent code completion, snippets, and code refactoring. It's free and open source. You can use it also for additional languages by installing extensions.
 If you are used to working with other source code editors or IDEs (like Visual Studio or IntelliJ) with support for .NET Core you don't have to switch.
@@ -70,7 +70,7 @@ You can do that by modifying the `settings.json` file under the menu item "File/
 
 <br>
 
-## Set up an account on a Cloud Foundry platform
+## 3. Set up an account on a Cloud Foundry platform
 
 Choose your prefered Cloud Foundry provider and sign up for an account.
 
@@ -82,14 +82,14 @@ To start using it, here's the link to the [documentation](https://docs.developer
 
 <br>
 
-## Install the Cloud Foundry CLI
+## 4. Install the Cloud Foundry CLI
 
 Follow the [instructions](https://docs.cloudfoundry.org/cf-cli/install-go-cli.html) to install the CLI.
 
 <br>
 
 
-## Write some Code
+## 5. Write some Code
 
 * First we will set up a new .NET Core "hello world" console application.
 * Then we will turn it into a web application and also into a MVC API application.
@@ -532,7 +532,7 @@ Your application endpoint should now be available on port 5001.
 
 <br>
 
-## Deployment to Cloud Foundry
+## 6. Deployment to Cloud Foundry
 
 Cloud Foundry automatically uses the .NET Core buildpack when:
 
@@ -686,7 +686,7 @@ Deploy the app:
 $ cf push myCFApp
 ```
 
-... and it failed!
+... and it has failed!
 
 ![failed output](failed.png)
 
@@ -705,7 +705,7 @@ In the current installed Cloud Foundry version the latest .NET framework 1.1.0 i
 This will be fixed by one of the next releases.
 The online version of the buildpack is able to use the latest framework version by downloading it.
 
-Therefore, we deploy our app with the online buildpack:
+This behaviour can occur anytime if you are using the latest version of .NET Core. Therefore, we deploy our app with the online buildpack:
 
 ```shell
 $ cf push myCFApp -b https://github.com/cloudfoundry/dotnet-core-buildpack
